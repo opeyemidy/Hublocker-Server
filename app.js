@@ -25,6 +25,7 @@ mongoose
   });
 
 app.use(cors());
+app.use(express.static('build'));
 app.use(express.json());
 
 app.use('/api/lockers', lockersRouter);
